@@ -13,12 +13,16 @@
         <h1 id="heading" style="font-family: sans-serif">Lorem ipsum dolor sit amet consectetur.</h1>
         <h5 style="font-size: 18px;font-weight: 400;font-family: sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad cumque odit alias dolorum. Neque quam eligendi dignissimos. Dolore, magni.</h3>
         <br>
+
+       <div id="container"></div>
+
         <button id="clickbutton">Click</button>
+
         
 </body>
 
 <script>
-// Created a button that chhnages the color of heading
+// Created a button that changes the color of heading
 
 //const el = document.getElementById("clickbutton");
 //const h1 = document.getElementById("heading");
@@ -41,6 +45,24 @@
 //        allChildren.item(i).remove();    // removing sentence on click
 //    });
 //}
+
+
+
+
+// Dynamically element in js
+
+const button = document.getElementById("Clickbutton");
+const container = document.getElementById("container");
+
+button.addEventListener('click', ()=> {
+const el = document.createElement('h1');
+el.innerHTML = 'Ritik Petare';
+container.appendChild(el);
+// 
+})
+
+
+
 
 </script>
 </html>
